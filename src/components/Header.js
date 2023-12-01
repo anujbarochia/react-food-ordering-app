@@ -1,14 +1,11 @@
 import React from "react";
+import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   return (
     <div className="header mx-1 flex justify-between border-solid border-2 border-black">
       <div className="logo-container">
-        <img
-          className="logo w-20 mx-5"
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png"
-          alt=""
-        />
+        <img className="logo w-20 mx-5" src={LOGO_URL} alt="" />
       </div>
       <div className="nav-items">
         <ul className="flex mr-2">

@@ -1,4 +1,5 @@
 import React from "react";
+import { CDN_URL } from "../utils/constants";
 
 function RestaurantCard({ obj }) {
   {
@@ -8,10 +9,7 @@ function RestaurantCard({ obj }) {
     <div className="res-cards m-2 w-48 h-72 border-solid border-[3px] bg-stone-800 hover:border-red-300 hover:ring-2 ring-stone-600 hover:cursor-pointer">
       <div className="relative">
         <img
-          src={
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-            obj.card.card.info.cloudinaryImageId
-          }
+          src={CDN_URL + obj.card.card.info.cloudinaryImageId}
           alt=""
           className="
            logo w-48 h-[130px] object-cover"
@@ -36,8 +34,5 @@ function RestaurantCard({ obj }) {
     </div>
   );
 }
-// obj.card.card.info.avgRating
-// obj.card.card.info.cuisines.join(", ")
-// obj.card.card.info.sla.slaString
-// obj.card.card.info.sla.lastMileTravelString
+
 export default RestaurantCard;

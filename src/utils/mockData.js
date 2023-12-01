@@ -1,6 +1,3 @@
-import React from "react";
-import Restaurant from "./RestaurantCard.js";
-
 const restaurantList = [
   {
     card: {
@@ -791,14 +788,4 @@ const restaurantList = [
   },
 ];
 
-function ShowRestaurant() {
-  return (
-    <>
-      {restaurantList.map((object) => (
-        <Restaurant key={object.card.card.info.id} obj={object} />
-      ))}
-    </>
-  );
-}
-
-export default ShowRestaurant;
+export default restaurantList;
