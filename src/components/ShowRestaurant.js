@@ -1,8 +1,7 @@
 import React from "react";
 import RestaurantCard from "./RestaurantCard.js";
-import restaurantList from "../utils/mockData.js";
 
-function ShowRestaurant() {
+function ShowRestaurant({ restaurantList }) {
   return (
     <>
       {restaurantList.map((object) => {

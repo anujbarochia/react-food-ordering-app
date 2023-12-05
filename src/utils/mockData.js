@@ -11,7 +11,7 @@ const restaurantList = [
           areaName: "PDPU",
           costForTwo: "₹150 for two",
           cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
-          avgRating: 4,
+          avgRating: 4.1,
           veg: true,
           feeDetails: {
             restaurantId: "552257",
@@ -122,7 +122,7 @@ const restaurantList = [
           areaName: "Bhat",
           costForTwo: "₹400 for two",
           cuisines: ["Italian", "Pizzas", "Pastas"],
-          avgRating: 4,
+          avgRating: 4.2,
           veg: true,
           feeDetails: {
             restaurantId: "402179",
@@ -533,6 +533,7 @@ const restaurantList = [
           areaName: "Chandkheda",
           costForTwo: "₹350 for two",
           cuisines: ["Italian", "American", "Pizzas", "Italian-American"],
+          avgRating: 3.2,
           veg: true,
           feeDetails: {
             restaurantId: "484273",
