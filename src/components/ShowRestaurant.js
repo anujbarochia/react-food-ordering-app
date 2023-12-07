@@ -1,10 +1,13 @@
 import React from "react";
 import RestaurantCard from "./RestaurantCard.js";
+import NoSuchRestaurant from "./NoSuchRestaurant.js";
 
-function ShowRestaurant({ restaurantList }) {
-  return (
+function ShowRestaurant({ filteredRestaurantList }) {
+  return filteredRestaurantList.length === 0 ? (
+    <NoSuchRestaurant />
+  ) : (
     <>
-      {restaurantList.map((object) => {
+      {filteredRestaurantList.map((object) => {
         return <RestaurantCard key={object.card.card.info.id} obj={object} />;
       })}
     </>
